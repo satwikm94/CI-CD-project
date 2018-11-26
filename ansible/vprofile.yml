@@ -14,7 +14,6 @@
   - name: Install tomcat
     yum: name=tomcat state=present
 
-
   - name: Download latest VProfile.war file
     get_url: url=http://{{nexusip}}:8081/nexus/content/repositories/VProfile-repo/{{groupid}}/{{time}}/{{build}}/{{vprofile_version}} dest=/tmp/ mode=755
 
